@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite.AllApiTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 1, Errors: 8, Skipped: 0, Time elapsed: 34.427 sec <<< FAILURE! - in TestSuite.AllApiTest
+T01_StatusCodeTest(ApiTests.Example1Test)  Time elapsed: 3.789 sec  <<< FAILURE!
+java.lang.AssertionError: Status Check Failed! expected:<200> but was:<400>
+	at ApiTests.Example1Test.T01_StatusCodeTest(Example1Test.java:38)
+
+T02_SearchTermTest(ApiTests.Example1Test)  Time elapsed: 1.446 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Cannot get property 'title' on null object
+	at ApiTests.Example1Test.T02_SearchTermTest(Example1Test.java:44)
+Caused by: java.lang.NullPointerException: Cannot get property 'title' on null object
+	at ApiTests.Example1Test.T02_SearchTermTest(Example1Test.java:44)
+
+T03_verifyOnlyFourVideosReturned(ApiTests.Example1Test)  Time elapsed: 1.036 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Cannot get property 'id' on null object
+	at ApiTests.Example1Test.T03_verifyOnlyFourVideosReturned(Example1Test.java:51)
+Caused by: java.lang.NullPointerException: Cannot get property 'id' on null object
+	at ApiTests.Example1Test.T03_verifyOnlyFourVideosReturned(Example1Test.java:51)
+
+T04_duplicateVideoVerification(ApiTests.Example1Test)  Time elapsed: 0.988 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Cannot get property 'id' on null object
+	at ApiTests.Example1Test.T04_duplicateVideoVerification(Example1Test.java:57)
+Caused by: java.lang.NullPointerException: Cannot get property 'id' on null object
+	at ApiTests.Example1Test.T04_duplicateVideoVerification(Example1Test.java:57)
+
+T05_printAttributes(ApiTests.Example1Test)  Time elapsed: 1.003 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Cannot get property 'id' on null object
+	at ApiTests.Example1Test.printTitlePubDateDuration(Example1Test.java:78)
+	at ApiTests.Example1Test.T05_printAttributes(Example1Test.java:63)
+Caused by: java.lang.NullPointerException: Cannot get property 'id' on null object
+	at ApiTests.Example1Test.printTitlePubDateDuration(Example1Test.java:78)
+	at ApiTests.Example1Test.T05_printAttributes(Example1Test.java:63)
+
+T02_SearchTermTest(ApiTests.Example2Test)  Time elapsed: 1.011 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Cannot get property 'id' on null object
+	at ApiTests.Example2Test.T02_SearchTermTest(Example2Test.java:47)
+Caused by: java.lang.NullPointerException: Cannot get property 'id' on null object
+	at ApiTests.Example2Test.T02_SearchTermTest(Example2Test.java:47)
+
+T03_verifyExtraFourVideosReturned(ApiTests.Example2Test)  Time elapsed: 1.013 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Cannot get property 'related' on null object
+	at ApiTests.Example2Test.T03_verifyExtraFourVideosReturned(Example2Test.java:53)
+Caused by: java.lang.NullPointerException: Cannot get property 'related' on null object
+	at ApiTests.Example2Test.T03_verifyExtraFourVideosReturned(Example2Test.java:53)
+
+T04_duplicateVideoVerification(ApiTests.Example2Test)  Time elapsed: 22.002 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Cannot get property 'id' on null object
+	at ApiTests.Example2Test.getMergedVideoLists(Example2Test.java:80)
+	at ApiTests.Example2Test.T04_duplicateVideoVerification(Example2Test.java:59)
+Caused by: java.lang.NullPointerException: Cannot get property 'id' on null object
+	at ApiTests.Example2Test.getMergedVideoLists(Example2Test.java:80)
+	at ApiTests.Example2Test.T04_duplicateVideoVerification(Example2Test.java:59)
+
+T05_printAttributes(ApiTests.Example2Test)  Time elapsed: 0.972 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Cannot get property 'id' on null object
+	at ApiTests.Example2Test.getMergedVideoLists(Example2Test.java:80)
+	at ApiTests.Example2Test.printAttributes(Example2Test.java:85)
+	at ApiTests.Example2Test.T05_printAttributes(Example2Test.java:65)
+Caused by: java.lang.NullPointerException: Cannot get property 'id' on null object
+	at ApiTests.Example2Test.getMergedVideoLists(Example2Test.java:80)
+	at ApiTests.Example2Test.printAttributes(Example2Test.java:85)
+	at ApiTests.Example2Test.T05_printAttributes(Example2Test.java:65)
+
